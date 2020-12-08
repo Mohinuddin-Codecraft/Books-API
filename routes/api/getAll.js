@@ -1,7 +1,6 @@
 const express=require("express")
 const router=express.Router();
 const findModule=require('../../findModule');
-// const idFilter = req => ele => ele.id === parseInt(req.params.id);
 
 router.get('/:field',(req,res)=>{
     const module=findModule(req.params.field)
@@ -9,7 +8,6 @@ router.get('/:field',(req,res)=>{
 })
 
 router.get('/:field/:id',(req,res)=>{
-    // res.send(req.params.id)
     const module=findModule(req.params.field)
     const found=module.some(element=>element.id===parseInt(req.params.id))
     if(found){
