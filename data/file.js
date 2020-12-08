@@ -110,8 +110,6 @@ module.exports={
     publishers
 }
 
-
-
 // data = {
 //     "books": [
 //         {
