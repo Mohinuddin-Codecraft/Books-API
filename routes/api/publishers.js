@@ -4,8 +4,6 @@ const router=express.Router();
 
 const { publishers } = require("../../data/file");
 
-
-
 router.post('/publishers',(req,res)=>{
     const newpublisher={
         id:uuid.v4(),

@@ -23,12 +23,10 @@ router.delete('/authors/:id',(req,res)=>{
     const found=authors.some(element=>element.id===parseInt(req.params.id))
     if(!found){
         res.json({ msg: `No author with the id of ${req.params.id} in authors` })
-
     }else{
     res.send({message:`Author deleted successfully`,author: authors.filter(element=>element.id===parseInt(req.params.id))})
       
     }
-   
 })
 
 module.exports=router
