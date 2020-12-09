@@ -29,7 +29,7 @@ books = [
         "name": "book4",
         "year": 2009,
         "isbn": 2321,
-        "authorId": 4,
+        "authorId": 3,
         "publisherId": 2
     },
     {
@@ -61,7 +61,7 @@ authors = [
     {
         "id": 1,
         "name": "author1",
-        "dob": "12/2/1990",
+        "dob": "12/02/1990",
         "contact": 4575357524,
         "address": "address1"
     },
@@ -75,7 +75,7 @@ authors = [
     {
         "id": 3,
         "name": "author3",
-        "dob": "18/5/1998",
+        "dob": "18/05/1998",
         "contact": 6372819,
         "address": "address3"
     }
