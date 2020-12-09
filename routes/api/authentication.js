@@ -29,7 +29,7 @@ router.post('/login', (req, res) => {
     }
     const user = users.find(ele => ele.email === currentUser.email && ele.password === currentUser.password)
     if(user){
-    jwt.sign({ }, 'secretkey', (err, token) => {
+    jwt.sign({user}, 'secretkey',{expiresIn: '1h'}, (err, token) => {
         if(err) return err
         res.json({
             token
